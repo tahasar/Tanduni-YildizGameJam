@@ -16,16 +16,26 @@ public class CharacterMovement : MonoBehaviour
     public float jumpHeight = 3f;
     Vector3 velocity;
     public bool isGrounded;
+    [HideInInspector] GameManager gameManager;
 
+    Vector3 startPos;
 
     public void Start()
     {
         characterController = GetComponent<CharacterController>();
+        gameManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
+
+        startPos = transform.position;
     }
 
     public void Update()
     {
         Move();
+
+        if (velocity.y < -10f)
+        {
+            gameObject.transform.position = startPos;
+        }
     }
 
     public void Move()
@@ -49,11 +59,12 @@ public class CharacterMovement : MonoBehaviour
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
     }
-
-
-
-
-
-
+    public void OnTriggerEnter(Collider col)
+    {
+        if (col.gameObject.CompareTag("NewArea"))
+        {
+            gameManager.dotween = false;
+        }
+    }
 
 }
