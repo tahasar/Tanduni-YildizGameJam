@@ -30,15 +30,10 @@ public class Patrolling : MonoBehaviour
         if (targetDistance > 0.5f)
         {
             agent.SetDestination(points[targetNumber].position);
-            //transform.position = Vector3.MoveTowards(transform.position, points[current].position, speed * Time.deltaTime);
-            //transform.LookAt(points[targetNumber].position);
-
-            
         }
         else
         {
             targetNumber = Random.Range(0,points.Length);
-            //current = (current + 1) % points.Length;
         }
     }
 }
