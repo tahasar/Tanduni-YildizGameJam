@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CharacterMovement : MonoBehaviour
 {
@@ -21,6 +22,7 @@ public class CharacterMovement : MonoBehaviour
     public static CharacterController instance;
 
     Vector3 startPos;
+    Vector3 startRot;
 
     public void Start()
     {
@@ -36,16 +38,22 @@ public class CharacterMovement : MonoBehaviour
         gameManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
 
         startPos = transform.position;
+        startRot = transform.eulerAngles;
     }
 
     public void Update()
     {
         Move();
 
-        if (velocity.y < -10f)
+        if (SceneManager.GetActiveScene().buildIndex == 2)
         {
-            gameObject.transform.position = startPos;
+            if (transform.position.y < -2f)
+            {
+                transform.position = startPos;
+                transform.rotation = Quaternion.Euler(startRot);
+            }
         }
+        
     }
 
     public void Move()

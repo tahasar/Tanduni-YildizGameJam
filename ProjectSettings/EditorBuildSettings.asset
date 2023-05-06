@@ -4,5 +4,20 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/SherlockMap.unity
+    guid: fa668fbb59f006d4ea360466a4cfd0bc
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/SpecularMap.unity
+    guid: ebb0d1e2b0f7032419b6b3b8b47a238c
+  - enabled: 1
+    path: Assets/Scenes/ParkurMap.unity
+    guid: 07b9b0247a144564698bddfafd852c1b
+  - enabled: 1
+    path: Assets/Scenes/BaltaMap.unity
+    guid: d83d72e134ab3bf4a8c09b5167e94414
   m_configObjects: {}
