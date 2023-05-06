@@ -1,0 +1,466 @@
+fileFormatVersion: 2
+guid: f8638cd15f8654343ae8640e259446f1
+ModelImporter:
+  serializedVersion: 21300
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_Buildings18thCentury0035_1_S
+    second: {fileID: 2100000, guid: 13bb044b252ca7f468209988acc4c9c4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_BuildingsDerelict0001_M
+    second: {fileID: 2100000, guid: 4e0684881f11d204183f19390f42064e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_BuildingsDerelict0068_S
+    second: {fileID: 2100000, guid: 4d666cc3873fffa4e9ddbe688e001b0c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_BuildingsDerelict0132_S
+    second: {fileID: 2100000, guid: cb8118eee042eb6489d37edcd5873c65, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_BuildingsHouseOld0005_M
+    second: {fileID: 2100000, guid: d1bbe799de1812f40b2e5d49b8c75303, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_BuildingsHouseOld0007_M
+    second: {fileID: 2100000, guid: e2ce0bc2c055f5b43b24ecaee508f6d5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_BuildingsHouseOld0203_S
+    second: {fileID: 2100000, guid: 6e6293ec00b5e1542a6a228ed315ba72, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_BuildingsTallHouse0057_S
+    second: {fileID: 2100000, guid: 6d84fd691c503ea468b81ea360d7c550, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_DoorsWoodPanelled0239_S
+    second: {fileID: 2100000, guid: c4ab64b26e558844d979a7b7173adfaa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_HighRiseResidential0035_S
+    second: {fileID: 2100000, guid: b6ac876f3b31af242909bb7503adfa4d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_HighRiseTowers0146_S
+    second: {fileID: 2100000, guid: f0b6d5cb17feb2a4d92dba7ad04eeb52, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_MetalFences0005_S
+    second: {fileID: 2100000, guid: a67d9c75a54f5634dbf2c7c154ee74c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_RoadsBarriers0011_4_S
+    second: {fileID: 2100000, guid: b7b27595800e5544da904ae8749a2783, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_RoadsBarriers0011_4_S.001
+    second: {fileID: 2100000, guid: 5133bd822c9bd254d8f12ab44ccac024, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_RoadsBarriers0011_4_S.002
+    second: {fileID: 2100000, guid: 026a27d7ac18ba040a9906d2dda82c74, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_RoadsBarriers0011_4_S.003
+    second: {fileID: 2100000, guid: a0c29e2f7b555c841bb4221420304845, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_RoadsBarriers0011_4_S.004
+    second: {fileID: 2100000, guid: 23802020649abc8408dd07221ecc419f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_RoadsBarriers0011_4_S.005
+    second: {fileID: 2100000, guid: 3d243abab17960e42b9f033be462ee08, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_RoadsBarriers0011_5_S
+    second: {fileID: 2100000, guid: 02e63b0862de6c64891cad0cf6fc9353, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_RoadsBarriers0011_5_S.001
+    second: {fileID: 2100000, guid: 090150da260cbf0469d37eba818bc24b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_RoadsBarriers0011_5_S.002
+    second: {fileID: 2100000, guid: 2b3b1044c074e4643aafd43d8652bf58, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_RoadsBarriers0011_5_S.003
+    second: {fileID: 2100000, guid: 02e76ed46fadeb54bbf9d7b1a9b07cf9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_RoadsBarriers0011_5_S.004
+    second: {fileID: 2100000, guid: 5d1539f479d8ddb4e9ffc10ec94ecd8e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_RoadsBarriers0011_6_S
+    second: {fileID: 2100000, guid: ad651713499772d46b19d04735e07cb4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_RoadsBarriers0011_6_S.001
+    second: {fileID: 2100000, guid: 3d040c04ab2eef348a6cf3b85aaf6181, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_RoadsBarriers0011_6_S.002
+    second: {fileID: 2100000, guid: dae0a7e30f2bc44438943546e06afcc4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_RoadsBarriers0021_S
+    second: {fileID: 2100000, guid: 3bcc7dfbfa745074891853228db44d2c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_RoadsBarriers0021_S.001
+    second: {fileID: 2100000, guid: 67a0caa519089434f9af9bfcc2aa04ef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_Shops0175_S
+    second: {fileID: 2100000, guid: b71935087dbe66942b0fa8defc9a85d4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_Shops0244_S
+    second: {fileID: 2100000, guid: d8b52474844dc6f40830fe7b71752b76, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: auvent
+    second: {fileID: 2100000, guid: ff74678bb75e89841b75a1fd2aa6e72f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cote-batiment
+    second: {fileID: 2100000, guid: ec5d9b19733dfd34a887e83e4411714c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cote-batiment.001
+    second: {fileID: 2100000, guid: dc2c21336fe126d4ab64dfe1a4c42331, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cote-batiment.002
+    second: {fileID: 2100000, guid: 1a3e5d039e79b35429d0e8bb0867886e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cote-batiment.003
+    second: {fileID: 2100000, guid: e1a88b67bd5ee3e41b1437fd9217dedd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cote-batiment.004
+    second: {fileID: 2100000, guid: 453ecc97685e4cb49ba214ca86b49b04, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cote-batiment.005
+    second: {fileID: 2100000, guid: dccda443cf853e448a87d5bcda03af1b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cote-batiment.007
+    second: {fileID: 2100000, guid: 8e15006fec373f3419a8e1e86e4b8092, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cote-batiment.008
+    second: {fileID: 2100000, guid: bca5b1323079db84cb54ac09cb69776f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cote-batiment.009
+    second: {fileID: 2100000, guid: 7c2732692d278d048abc05a68080956c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cote-batiment.010
+    second: {fileID: 2100000, guid: cbe6ecde142ced1469db7f8baec0e520, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass-voiture
+    second: {fileID: 2100000, guid: f96a6c4e6ac992140b131fb36af0041b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass-voiture.001
+    second: {fileID: 2100000, guid: bfa7411bf7c43f242890eb6352ad3718, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gravas
+    second: {fileID: 2100000, guid: f02cd891965c9a24cbf9e62693596caa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ivy-leaves
+    second: {fileID: 2100000, guid: 6e703d7ba61383f4c9a519384d3ca475, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ivy-leaves.001
+    second: {fileID: 2100000, guid: 3ecc40ed1f053a34bb1c2404e226838f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ivy-tronc
+    second: {fileID: 2100000, guid: 5473f4b955b3c0447a3f469cb0a4e7bc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ivy-tronc.001
+    second: {fileID: 2100000, guid: da70b5d078b463a488090e40d6dc151a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: jante
+    second: {fileID: 2100000, guid: b5dd7b6bb1fdf3f4d9823ca3b8a4447e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: jante.001
+    second: {fileID: 2100000, guid: d31ecf98614cd9e40a5588aff93f4ae8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: monticule
+    second: {fileID: 2100000, guid: 9263d9d7fd87e544e8dc10461b993d95, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: paves-trottoir
+    second: {fileID: 2100000, guid: 2a8970a46119e9745874ea85fd33002c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: paves-trottoir.001
+    second: {fileID: 2100000, guid: c7e1b84ebfaed9945b1e764f6691fbb0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: paves-trottoir.002
+    second: {fileID: 2100000, guid: cec4b09df428fd24c99fede4f036b0ec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: route
+    second: {fileID: 2100000, guid: fda72832de4dfe74889165788cd6b13e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: structure-toile
+    second: {fileID: 2100000, guid: a65676b5e99f0c3478ce3e4a60507c85, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: toile
+    second: {fileID: 2100000, guid: e26d565ab420d2a4891a2e641ce9c51d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: trottoir
+    second: {fileID: 2100000, guid: 7224b5bc152caac4796beadc928e65a7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: trottoir.001
+    second: {fileID: 2100000, guid: 56a7d3867ea00064185183e59330f0ae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: trottoir.002
+    second: {fileID: 2100000, guid: f15421735f3a4474a8812f58a35c7a90, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vide-voiture
+    second: {fileID: 2100000, guid: 69febaf102ad1c6479c2dfedef81a1d9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vide-voiture.001
+    second: {fileID: 2100000, guid: 4b0fadf6db77bcc4fa9376003a9a10a9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: voiture
+    second: {fileID: 2100000, guid: 6143feef1f3a50042a268e712e8be78e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: voiture.001
+    second: {fileID: 2100000, guid: 1085049fe47f6f1449ceca28249604af, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wall
+    second: {fileID: 2100000, guid: 7061dd37d00388a499f89c189408a770, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wall.001
+    second: {fileID: 2100000, guid: 19c55224ba0261b48abfce8711bc3d29, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wall.002
+    second: {fileID: 2100000, guid: 8beea1bdbbc7e2248ad17c8b33893dd6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wall.003
+    second: {fileID: 2100000, guid: 11b5eb6e59fd799409c261eca735654e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wall.buidings
+    second: {fileID: 2100000, guid: 47a224893deacf0478a5edb48e33877f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wall.buidings.001
+    second: {fileID: 2100000, guid: 3fcbc1228df690348b0788df85667084, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wall.buidings.002
+    second: {fileID: 2100000, guid: 544b32059e05cc44ab3f1ba4d14f0fc6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wall.buidings.003
+    second: {fileID: 2100000, guid: 417b6f7d7d6aa1e4e819be346407503f, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
