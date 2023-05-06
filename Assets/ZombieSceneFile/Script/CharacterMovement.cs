@@ -18,10 +18,20 @@ public class CharacterMovement : MonoBehaviour
     public bool isGrounded;
     [HideInInspector] GameManager gameManager;
 
+    public static CharacterController instance;
+
     Vector3 startPos;
 
     public void Start()
     {
+        if (instance != null)
+        {
+            Destroy(this.gameObject);
+            return;
+        }
+        
+        GameObject.DontDestroyOnLoad(this.gameObject);
+        
         characterController = GetComponent<CharacterController>();
         gameManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
 
