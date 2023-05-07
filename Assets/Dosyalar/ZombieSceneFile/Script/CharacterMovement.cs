@@ -19,23 +19,13 @@ public class CharacterMovement : MonoBehaviour
     public bool isGrounded;
     [HideInInspector] GameManager gameManager;
 
-    public static CharacterController instance;
-
     Vector3 startPos;
     Vector3 startRot;
 
     public void Start()
     {
-        if (instance != null)
-        {
-            Destroy(this.gameObject);
-            return;
-        }
-        
-        GameObject.DontDestroyOnLoad(this.gameObject);
-        
         characterController = GetComponent<CharacterController>();
-        gameManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
+        //gameManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
 
         startPos = transform.position;
         startRot = transform.eulerAngles;
@@ -45,7 +35,7 @@ public class CharacterMovement : MonoBehaviour
     {
         Move();
 
-        if (SceneManager.GetActiveScene().buildIndex == 2)
+        if (SceneManager.GetActiveScene().name == "SpecularMap")
         {
             if (transform.position.y < -2f)
             {
