@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4f0ac6ed43013334a8e94062956c0b78
+guid: fd54e88258762d843bd732c1c9dd2fa9
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -101,38 +101,26 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: huseyinIsim_0
+      name: copHover1_0
       rect:
         serializedVersion: 2
-        x: 1082
-        y: 453
-        width: 133
-        height: 17
+        x: 380
+        y: 369
+        width: 76
+        height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7add2a88a31b68b42afeab25d917a85e
-      internalID: 545176894
+      spriteID: 21c164cc757b0ef4689541f9e0795102
+      internalID: -1130052195
       vertices: []
       indices: 
       edges: []
@@ -140,7 +128,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 4f698119f6c0f9549a9b216a96e9328d
+    spriteID: 6dc1243a8d473da4498c8889c8b59cb8
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +136,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      huseyinIsim_0: 545176894
+      copHover1_0: -1130052195
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
