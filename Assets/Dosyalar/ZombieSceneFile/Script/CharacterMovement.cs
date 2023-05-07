@@ -74,7 +74,7 @@ public class CharacterMovement : MonoBehaviour
         {
             if (zombieAmount.transform.childCount == 0)
             {
-                loadManager.LoadNextLevel("SpecularMap");
+                LoadManager.instance.LoadNextLevel("SpecularMap");
             }
         }
 
@@ -84,17 +84,21 @@ public class CharacterMovement : MonoBehaviour
             {
                 if (enemyAxe.zombieHealth <= 0)
                 {
-                    loadManager.LoadNextLevel("PixelScene");
+                    LoadManager.instance.LoadNextLevel("PixelScene");
                 }
             }
         }
-       
-
-
-
+        
             Move();
 
-        if (SceneManager.GetActiveScene().name == "SpecularMap" || SceneManager.GetActiveScene().name == "BaltaMap")
+        if (SceneManager.GetActiveScene().name == "SpecularMap" || SceneManager.GetActiveScene().name == "BaltaMap" || SceneManager.GetActiveScene().name == "ParkurMap")
+        {
+            if (transform.position.y < -2f)
+            {
+                transform.position = startPos;
+                transform.rotation = Quaternion.Euler(startRot);
+            }
+        }
         {
             if (transform.position.y < -2f)
             {
@@ -176,7 +180,7 @@ public class CharacterMovement : MonoBehaviour
             }
             if (col.gameObject.CompareTag("ExitDoor"))
             {
-                loadManager.LoadNextLevel("SherlockMap");
+                loadManager.LoadNextLevel("SherlockMapFinish");
             }
             if (col.gameObject.CompareTag("SherlockExit"))
             {
@@ -206,5 +210,18 @@ public class CharacterMovement : MonoBehaviour
             }
            
         }
+    }
+    
+    
+    public void OyundanCik1()
+    {
+        VoiceManager.instance.Play("sahne20");
+        InvokeRepeating("OyundanCik2",45f,0f);
+    }
+    
+    public void OyundanCik2()
+    {
+        Debug.Log("sssssss");
+        Application.Quit();
     }
 }

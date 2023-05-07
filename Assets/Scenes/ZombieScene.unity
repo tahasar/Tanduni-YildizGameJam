@@ -759,6 +759,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6019778887138454678, guid: b17f2803ebb0d9c45bf740c6cc265bab, type: 3}
   m_PrefabInstance: {fileID: 1052166055}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &452615270 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7298265607623664668, guid: 354a20ce4f3f0814cba2b925c1c868e4, type: 3}
+  m_PrefabInstance: {fileID: 718650910}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61c40feced2aa924eaa609e5afdf272b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &487411586
 GameObject:
   m_ObjectHideFlags: 0
@@ -19050,7 +19061,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6495164551317361033, guid: 4c25de86b9fb0064697bf9f26089e4e2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.74
+      value: 1.21
       objectReference: {fileID: 0}
     - target: {fileID: 6495164551317361033, guid: 4c25de86b9fb0064697bf9f26089e4e2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -19084,6 +19095,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6495164551317361039, guid: 4c25de86b9fb0064697bf9f26089e4e2, type: 3}
+      propertyPath: loadManager
+      value: 
+      objectReference: {fileID: 452615270}
+    - target: {fileID: 6495164551317361039, guid: 4c25de86b9fb0064697bf9f26089e4e2, type: 3}
+      propertyPath: zombieAmount
+      value: 
+      objectReference: {fileID: 1847757353}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c25de86b9fb0064697bf9f26089e4e2, type: 3}
 --- !u!4 &6638591206697825248 stripped

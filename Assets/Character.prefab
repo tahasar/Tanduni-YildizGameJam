@@ -463,6 +463,7 @@ MonoBehaviour:
   jumpHeight: 1
   isGrounded: 0
   loadManager: {fileID: 0}
+  zombieAmount: {fileID: 0}
 --- !u!1 &7059137224721170503
 GameObject:
   m_ObjectHideFlags: 0

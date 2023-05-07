@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,13 +7,25 @@ using UnityEngine.UI;
 
 public class LoadManager : MonoBehaviour
 {
+    public static LoadManager instance;
     public GameObject blackPanel;
 
     public Image blackScreen;
 
     public Animator transition;
     public float transitionTime = 1f;
-    
+
+    private void Start()
+    {
+        if (instance != null && instance != this) 
+        { 
+            Destroy(this); 
+        } 
+        else 
+        { 
+            instance = this; 
+        } 
+    }
 
     // Update is called once per frame
     void Update()

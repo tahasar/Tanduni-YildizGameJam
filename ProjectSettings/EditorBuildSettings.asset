@@ -18,6 +18,15 @@ EditorBuildSettings:
     path: Assets/Scenes/ZombieScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
+    path: Assets/Scenes/PixelScene.unity
+    guid: 0bc8f92cea28acb4d86252b8b59285cf
+  - enabled: 1
+    path: Assets/Scenes/RedScene.unity
+    guid: b39024c0df869be4abc384a98db30b7c
+  - enabled: 1
+    path: Assets/Scenes/SherlockMapFinish.unity
+    guid: 217d2a054a7421d42a38d8a9ccee6d95
+  - enabled: 1
     path: Assets/Scenes/SpecularMap.unity
     guid: ebb0d1e2b0f7032419b6b3b8b47a238c
   - enabled: 1

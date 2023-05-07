@@ -18,9 +18,11 @@ public class ZombieMovement : MonoBehaviour
     bool isChase;
     [HideInInspector] public bool isPlayAnim;
 
-    [HideInInspector] ScoreManager coinAmount;
+    ScoreManager coinAmount;
 
     CharacterHealth characterHealth;
+
+    public GameObject coinObject;
 
 
     public void Start()
@@ -29,12 +31,14 @@ public class ZombieMovement : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         characterHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterHealth>();
 
-        if (SceneManager.GetActiveScene().name == "PixelScene")
+        if (SceneManager.GetActiveScene().name == "BaltaMap")
         coinAmount = GameObject.FindGameObjectWithTag("ScoreManager").GetComponent<ScoreManager>();
     }
 
     public void Update()
     {
+        
+        
         if (!isDead)
         {
             distance = Vector3.Distance(transform.position, target.position);
@@ -49,10 +53,11 @@ public class ZombieMovement : MonoBehaviour
             }
         }
 
-        if (SceneManager.GetActiveScene().name == "PixelScene")
-            if (coinAmount.score >6 && gameObject.CompareTag("EnemyAxeMap"))
+        if (SceneManager.GetActiveScene().name == "BaltaMap")
+            if (coinAmount.score > 6)
             {
                 anim.SetBool("PlayAnimation", true);
+                Debug.Log("ss");
                 isPlayAnim = true;
             }
     }
@@ -61,11 +66,11 @@ public class ZombieMovement : MonoBehaviour
     {
         anim.SetBool("Attack", true);
         anim.SetBool("Run", false);
-        Vector3 direction = target.position - transform.position;//bakýcaðýmýz pozisyonu belirledik
-        direction.y = 0;//yukarýya ve aþaðýya bakamýcagý için 0'a eþitledik
+        Vector3 direction = target.position - transform.position;//bakï¿½caï¿½ï¿½mï¿½z pozisyonu belirledik
+        direction.y = 0;//yukarï¿½ya ve aï¿½aï¿½ï¿½ya bakamï¿½cagï¿½ iï¿½in 0'a eï¿½itledik
 
         transform.rotation = Quaternion.Slerp(transform.rotation,
-        Quaternion.LookRotation(direction), turnSpeed * Time.deltaTime);//yönümüzü player a çevirdik
+        Quaternion.LookRotation(direction), turnSpeed * Time.deltaTime);//yï¿½nï¿½mï¿½zï¿½ player a ï¿½evirdik
 
         agent.updatePosition = false;
         agent.updateRotation = false;
