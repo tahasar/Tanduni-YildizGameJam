@@ -59,6 +59,18 @@ public class VoiceManager : MonoBehaviour
         if (SceneManager.GetActiveScene().name == "BaltaMap")
         {
             InvokeRepeating("Sahne12",2f,0);
+            InvokeRepeating("Sahne13",16f,0);
+        }
+        
+        if (SceneManager.GetActiveScene().name == "RedScene")
+        {
+            InvokeRepeating("Sahne9",0.5f,0);
+            InvokeRepeating("Sahne10",8f,0);
+        }
+        
+        if (SceneManager.GetActiveScene().name == "PixelScene")
+        {
+            InvokeRepeating("Sahne15",1f,0);
         }
     }
 
