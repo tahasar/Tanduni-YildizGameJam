@@ -9,6 +9,8 @@ public class Coin : MonoBehaviour
 {
     public TextMeshProUGUI scoreText;
     private ScoreManager scoreManager;
+    //[SerializeField] public AudioClip coinAC;
+    //[SerializeField] public AudioSource coinAS;
 
     // Start is called before the first frame update
     void Start()

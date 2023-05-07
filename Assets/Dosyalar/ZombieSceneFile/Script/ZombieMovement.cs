@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class ZombieMovement : MonoBehaviour
 {
@@ -14,11 +15,22 @@ public class ZombieMovement : MonoBehaviour
     float distance;
     public float chaseDistance;
     bool isDead = false;
+    bool isChase;
+    [HideInInspector] public bool isPlayAnim;
+
+    [HideInInspector] ScoreManager coinAmount;
+
+    CharacterHealth characterHealth;
+
 
     public void Start()
     {
         anim = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
+        characterHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterHealth>();
+
+        if (SceneManager.GetActiveScene().name == "PixelScene")
+        coinAmount = GameObject.FindGameObjectWithTag("ScoreManager").GetComponent<ScoreManager>();
     }
 
     public void Update()
@@ -31,13 +43,18 @@ public class ZombieMovement : MonoBehaviour
             {
                 AttackPlayer();
             }
-            else
+            else if (!gameObject.CompareTag("Boss") || isChase)
             {
                 ChasePlayer();
             }
-
         }
-     
+
+        if (SceneManager.GetActiveScene().name == "PixelScene")
+            if (coinAmount.score >6 && gameObject.CompareTag("EnemyAxeMap"))
+            {
+                anim.SetBool("PlayAnimation", true);
+                isPlayAnim = true;
+            }
     }
 
     void AttackPlayer()
@@ -53,10 +70,24 @@ public class ZombieMovement : MonoBehaviour
         agent.updatePosition = false;
         agent.updateRotation = false;
 
+        if (!gameObject.CompareTag("EnemyAxeMap"))
+        Invoke("DamageZombie", 1.5f);
+
+    }
+    public void Craw()
+    {
+        if (gameObject.CompareTag("Boss"))
+        {
+            Invoke("ChasePlayer", 4f);
+            anim.SetBool("Saw", true);
+            agent.updatePosition = false;
+            agent.updateRotation = false;
+        }
     }
 
     void ChasePlayer()
     {
+        isChase = true;
         anim.SetBool("Attack", false);
         anim.SetBool("Run", true);
         agent.SetDestination(target.position);
@@ -71,19 +102,15 @@ public class ZombieMovement : MonoBehaviour
         agent.enabled = false;
         agent.updatePosition = false;
         agent.updateRotation = false;
-        
+
 
         anim.SetBool("Attack", false);
         anim.SetBool("Run", false);
         anim.Play("Death");
     }
 
-    void DamageZombie() //AnimationEvent
+    void DamageZombie() 
     {
-        if (distance <= chaseDistance)
-        {
-            CharacterHealth.singleton.DamagePlayer(damageAmount);
-        }
-
+        characterHealth.DamagePlayer(damageAmount);
     }
 }
