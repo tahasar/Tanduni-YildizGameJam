@@ -7,6 +7,11 @@ TagManager:
   - Zombie
   - StartCol
   - NewArea
+  - EnemyAnimStart
+  - Button
+  - Paper
+  - Key
+  - PixelDoor
   layers:
   - Default
   - TransparentFX

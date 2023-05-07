@@ -1,12 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CharacterMovement : MonoBehaviour
 {
     Vector3 moveVector;
     CharacterController characterController;
     public float Speed = 5f;
+
+    [SerializeField] GameObject enemy;
+
+    [Header("Ray")]
+    [SerializeField] Transform rayPoint;
+    RaycastHit hit;
+    [SerializeField] GameObject ýmageUI;
+
+    [Header("Pref")]
+    [SerializeField] GameObject button;
+    [SerializeField] GameObject key;
+    [SerializeField] int buttonAmount = 0;
+    [SerializeField] GameObject ExitDoor;
 
     [Header("Ground")]
     public Transform groundCheck;
@@ -23,19 +37,60 @@ public class CharacterMovement : MonoBehaviour
     public void Start()
     {
         characterController = GetComponent<CharacterController>();
+
         gameManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
 
         startPos = transform.position;
+       
     }
-
+   
     public void Update()
     {
         Move();
 
-        if (velocity.y < -10f)
+        //TEXTURESUZ SAHNEDEYSE
+        /* if (velocity.y < -10f)
+         {
+             gameObject.transform.position = startPos;
+         }*/
+        if (enemy != null)
         {
-            gameObject.transform.position = startPos;
+            float distance = Vector3.Distance(transform.position, enemy.transform.position);
+
+            if (distance < 5f)
+            {
+                enemy.GetComponent<Animator>().SetBool("EnemyAttack", true);
+            }
         }
+
+        if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, 25f))
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                if (hit.collider.CompareTag("Button"))
+                {
+                    hit.collider.gameObject.SetActive(false);
+                    ýmageUI.SetActive(true);
+                    buttonAmount++;
+                }
+                if (hit.collider.CompareTag("Key"))
+                {
+                    key.SetActive(false);
+                    ExitDoor.SetActive(true);
+                }
+                else
+                {
+                    ýmageUI.SetActive(false);
+                }
+            }
+
+        }
+
+        if (buttonAmount >3)
+        {
+            key.SetActive(true);
+        }
+
     }
 
     public void Move()
@@ -53,8 +108,8 @@ public class CharacterMovement : MonoBehaviour
 
         characterController.Move(velocity * Time.deltaTime);
 
-      
-        if (Input.GetButtonDown("Jump") && isGrounded )
+
+        if (Input.GetButtonDown("Jump") && isGrounded)
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
@@ -65,6 +120,13 @@ public class CharacterMovement : MonoBehaviour
         {
             gameManager.dotween = false;
         }
+        if (col.gameObject.CompareTag("ExitDoor"))
+        {
+            //Sherlock Sahnesi
+        }
+
     }
+
+
 
 }
