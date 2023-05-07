@@ -145,3 +145,8 @@ MonoBehaviour:
     audioName: sahne20
     volume: 0.23
     pitch: 1
+  - clip: {fileID: 8300000, guid: 587b3710a1e25e7429912845d046b10d, type: 3}
+    source: {fileID: 0}
+    audioName: masaustu
+    volume: 0.23
+    pitch: 1

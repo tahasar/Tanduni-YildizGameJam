@@ -63,6 +63,11 @@ public class LoadManager : MonoBehaviour
         //}
     }
 
+    public void loadBaslangic()
+    {
+        LoadNextLevel("BaslangicMap");
+    }
+
     public void LoadNextLevel(string sceneName)
     {
         StartCoroutine(LoadLevel(sceneName));

@@ -72,6 +72,11 @@ public class VoiceManager : MonoBehaviour
         {
             InvokeRepeating("Sahne15",1f,0);
         }
+        
+        if (SceneManager.GetActiveScene().name == "Masaustu")
+        {
+            InvokeRepeating("Masaustu",1f,0);
+        }
     }
 
     void Update()
@@ -96,7 +101,6 @@ public class VoiceManager : MonoBehaviour
     }
     
     /////////////////////////////////////////////////////////////////////////////
-
 
     public void Sahne1()
     {
@@ -196,5 +200,10 @@ public class VoiceManager : MonoBehaviour
     public void Sahne20()
     {
         Play("sahne20");
+    }
+    
+    public void Masaustu()
+    {
+        Play("masaustu");
     }
 }
