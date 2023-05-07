@@ -11,6 +11,8 @@ public class CharacterMovement : MonoBehaviour
     public float Speed = 5f;
 
     [SerializeField] GameObject enemy;
+    [SerializeField] ZombieMovement boss;
+
 
     [Header("Ray")]
     [SerializeField] Transform rayPoint;
@@ -22,6 +24,7 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField] GameObject key;
     [SerializeField] int buttonAmount = 0;
     [SerializeField] GameObject ExitDoor;
+    [SerializeField] NpcTalk npcTalk;
 
     [Header("Ground")]
     public Transform groundCheck;
@@ -32,6 +35,9 @@ public class CharacterMovement : MonoBehaviour
     Vector3 velocity;
     public bool isGrounded;
     [HideInInspector] GameManager gameManager;
+    public LoadManager loadManager;
+    [SerializeField] GameObject zombieAmount;
+    [HideInInspector] ZombieHealth enemyAxe;
 
     Vector3 startPos;
     Vector3 startRot;
@@ -39,22 +45,56 @@ public class CharacterMovement : MonoBehaviour
     public void Start()
     {
         characterController = GetComponent<CharacterController>();
-        //gameManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
 
+        if (SceneManager.GetActiveScene().name == "BaltaMap")
+        {
+            enemyAxe = GameObject.FindGameObjectWithTag("EnemyAxeMap").GetComponent<ZombieHealth>();
+        }
+       
         startPos = transform.position;
         startRot = transform.eulerAngles;
 
-        gameManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
+        if (boss != null)
+            boss = GameObject.FindGameObjectWithTag("Boss").GetComponent<ZombieMovement>();
+       
+
+        if (npcTalk!=null)
+            npcTalk = GameObject.FindGameObjectWithTag("NpcTalk").GetComponent<NpcTalk>();
+
+        if (gameManager!=null)
+            gameManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
 
         startPos = transform.position;
-       
+
     }
-   
+
     public void Update()
     {
-        Move();
+        if (SceneManager.GetActiveScene().name == "ZombieScene")
+        {
+            if (zombieAmount.transform.childCount == 0)
+            {
+                loadManager.LoadNextLevel("SpecularMap");
+            }
+        }
 
-        if (SceneManager.GetActiveScene().name == "SpecularMap")
+        if (SceneManager.GetActiveScene().name == "BaltaMap")
+        {
+            if (enemyAxe.gameObject.CompareTag("EnemyAxeMap"))
+            {
+                if (enemyAxe.zombieHealth <= 0)
+                {
+                    loadManager.LoadNextLevel("PixelScene");
+                }
+            }
+        }
+       
+
+
+
+            Move();
+
+        if (SceneManager.GetActiveScene().name == "SpecularMap" || SceneManager.GetActiveScene().name == "BaltaMap")
         {
             if (transform.position.y < -2f)
             {
@@ -62,12 +102,7 @@ public class CharacterMovement : MonoBehaviour
                 transform.rotation = Quaternion.Euler(startRot);
             }
         }
-        
-        //TEXTURESUZ SAHNEDEYSE
-        /* if (velocity.y < -10f)
-         {
-             gameObject.transform.position = startPos;
-         }*/
+
         if (enemy != null)
         {
             float distance = Vector3.Distance(transform.position, enemy.transform.position);
@@ -82,26 +117,28 @@ public class CharacterMovement : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                if (hit.collider.CompareTag("Button"))
+                if (SceneManager.GetActiveScene().name == "PixelScene")
                 {
-                    hit.collider.gameObject.SetActive(false);
-                    imageUI.SetActive(true);
-                    buttonAmount++;
-                }
-                if (hit.collider.CompareTag("Key"))
-                {
-                    key.SetActive(false);
-                    ExitDoor.SetActive(true);
-                }
-                else
-                {
-                    imageUI.SetActive(false);
+                    if (hit.collider.CompareTag("Button"))
+                    {
+                        hit.collider.gameObject.SetActive(false);
+                        imageUI.SetActive(true);
+                        buttonAmount++;
+                    }
+                    if (hit.collider.CompareTag("Key"))
+                    {
+                        key.SetActive(false);
+                        ExitDoor.SetActive(true);
+                    }
+                    else
+                    {
+                        imageUI.SetActive(false);
+                    }
                 }
             }
-
         }
 
-        if (buttonAmount >3)
+        if (buttonAmount > 3)
         {
             key.SetActive(true);
         }
@@ -128,19 +165,46 @@ public class CharacterMovement : MonoBehaviour
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
     }
+
     public void OnTriggerEnter(Collider col)
     {
-        if (col.gameObject.CompareTag("NewArea"))
+        if (loadManager != null)
         {
-            gameManager.dotween = false;
-        }
-        if (col.gameObject.CompareTag("ExitDoor"))
-        {
-            //Sherlock Sahnesi
-        }
+            if (col.gameObject.CompareTag("NewArea") && gameManager != null)
+            {
+                gameManager.dotween = false;
+            }
+            if (col.gameObject.CompareTag("ExitDoor"))
+            {
+                loadManager.LoadNextLevel("SherlockMap");
+            }
+            if (col.gameObject.CompareTag("SherlockExit"))
+            {
+                loadManager.LoadNextLevel("Masaustu");
+            }
+            if (col.gameObject.CompareTag("ParkurFinish"))
+            {
+                loadManager.LoadNextLevel("BaltaMap");
+            }
+            if (col.gameObject.CompareTag("StartDoor"))
+            {
+                loadManager.LoadNextLevel("ZombieScene");
+            }
+            if (col.gameObject.CompareTag("Cesme"))
+            {
+                loadManager.LoadNextLevel("RedScene");
+            }
+            if (col.gameObject.CompareTag("RedFinish"))
+            {
+                loadManager.LoadNextLevel("ParkurMap");
+            }
+        
 
+            if (col.gameObject.CompareTag("EnemyCraw"))
+            {
+                boss.Craw();
+            }
+           
+        }
     }
-
-
-
 }

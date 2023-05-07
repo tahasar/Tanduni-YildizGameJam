@@ -18851,6 +18851,22 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6746261232110844061, guid: bd1180de8ed46c94686033e4e7ed5075, type: 3}
+      propertyPath: m_Size.x
+      value: 0.00021642417
+      objectReference: {fileID: 0}
+    - target: {fileID: 6746261232110844061, guid: bd1180de8ed46c94686033e4e7ed5075, type: 3}
+      propertyPath: m_Size.z
+      value: 0.037026536
+      objectReference: {fileID: 0}
+    - target: {fileID: 6746261232110844061, guid: bd1180de8ed46c94686033e4e7ed5075, type: 3}
+      propertyPath: m_Center.y
+      value: -0.00041590183
+      objectReference: {fileID: 0}
+    - target: {fileID: 6746261232110844061, guid: bd1180de8ed46c94686033e4e7ed5075, type: 3}
+      propertyPath: m_Center.z
+      value: 0.0077608824
+      objectReference: {fileID: 0}
+    - target: {fileID: 6746261232110844061, guid: bd1180de8ed46c94686033e4e7ed5075, type: 3}
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
@@ -18917,6 +18933,22 @@ PrefabInstance:
     - target: {fileID: 8014465227400911335, guid: bd1180de8ed46c94686033e4e7ed5075, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8030653558221307152, guid: bd1180de8ed46c94686033e4e7ed5075, type: 3}
+      propertyPath: m_Size.z
+      value: 0.01294508
+      objectReference: {fileID: 0}
+    - target: {fileID: 8030653558221307152, guid: bd1180de8ed46c94686033e4e7ed5075, type: 3}
+      propertyPath: m_Center.x
+      value: -0.00023522582
+      objectReference: {fileID: 0}
+    - target: {fileID: 8030653558221307152, guid: bd1180de8ed46c94686033e4e7ed5075, type: 3}
+      propertyPath: m_Center.y
+      value: -0.00041590206
+      objectReference: {fileID: 0}
+    - target: {fileID: 8030653558221307152, guid: bd1180de8ed46c94686033e4e7ed5075, type: 3}
+      propertyPath: m_Center.z
+      value: 0.0007500998
       objectReference: {fileID: 0}
     - target: {fileID: 8030653558221307152, guid: bd1180de8ed46c94686033e4e7ed5075, type: 3}
       propertyPath: m_IsTrigger
