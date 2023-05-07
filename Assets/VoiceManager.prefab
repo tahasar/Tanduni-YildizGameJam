@@ -24,7 +24,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 200919612790070447}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -48,27 +48,27 @@ MonoBehaviour:
   - clip: {fileID: 8300000, guid: b2b9fc4c922f3b441bd43f7038b1f457, type: 3}
     source: {fileID: 0}
     audioName: sahne1
-    volume: 1
+    volume: 0.23
     pitch: 1
   - clip: {fileID: 8300000, guid: 280a142204bf14b44bd8443b17ff7f47, type: 3}
     source: {fileID: 0}
     audioName: sahne2
-    volume: 1
+    volume: 0.23
     pitch: 1
   - clip: {fileID: 8300000, guid: 7f0ece5140829c140b3a1308a677a25c, type: 3}
     source: {fileID: 0}
     audioName: sahne3
-    volume: 1
+    volume: 0.23
     pitch: 1
   - clip: {fileID: 8300000, guid: 3e1d82242bf660043b2c893a0377f598, type: 3}
     source: {fileID: 0}
     audioName: sahne4
-    volume: 1
+    volume: 0.23
     pitch: 1
   - clip: {fileID: 8300000, guid: aaede67cfdb23e94784c09f42e9b522d, type: 3}
     source: {fileID: 0}
     audioName: sahne5
-    volume: 1
+    volume: 0.23
     pitch: 1
   - clip: {fileID: 8300000, guid: 7783757f4c3c1e34fa8c537894e3827b, type: 3}
     source: {fileID: 0}
@@ -78,70 +78,70 @@ MonoBehaviour:
   - clip: {fileID: 8300000, guid: a638eba8f42012b4cafd4ec79f08d784, type: 3}
     source: {fileID: 0}
     audioName: sahne7
-    volume: 1
+    volume: 0.23
     pitch: 1
   - clip: {fileID: 8300000, guid: b6f2b32b6cc87bd49855785726cf1a10, type: 3}
     source: {fileID: 0}
     audioName: sahne8
-    volume: 1
+    volume: 0.23
     pitch: 1
   - clip: {fileID: 8300000, guid: 5603a3db07b306b408e908db012268a3, type: 3}
     source: {fileID: 0}
     audioName: sahne9
-    volume: 1
+    volume: 0.23
     pitch: 1
   - clip: {fileID: 8300000, guid: c9ac40100f9f4b04f84879fe8a952108, type: 3}
     source: {fileID: 0}
     audioName: sahne10
-    volume: 1
+    volume: 0.23
     pitch: 1
   - clip: {fileID: 8300000, guid: 8728bc648a360114bb2d9867c86e974a, type: 3}
     source: {fileID: 0}
     audioName: sahne11
-    volume: 1
+    volume: 0.23
     pitch: 1
   - clip: {fileID: 8300000, guid: de9ba37a109012348936725ff2473bfa, type: 3}
     source: {fileID: 0}
     audioName: sahne12
-    volume: 1
+    volume: 0.23
     pitch: 1
   - clip: {fileID: 8300000, guid: 3dae6eaae56b5cd46800b32c0233a59f, type: 3}
     source: {fileID: 0}
     audioName: sahne13
-    volume: 1
+    volume: 0.23
     pitch: 1
   - clip: {fileID: 8300000, guid: 43bd2acf96279694abf4554e59db12bc, type: 3}
     source: {fileID: 0}
     audioName: sahne14
-    volume: 1
+    volume: 0.23
     pitch: 1
   - clip: {fileID: 8300000, guid: a2cde66618edbc547b968fe8f1761865, type: 3}
     source: {fileID: 0}
     audioName: sahne15
-    volume: 1
+    volume: 0.23
     pitch: 1
   - clip: {fileID: 8300000, guid: 97a311a302423ee4f99846924442f619, type: 3}
     source: {fileID: 0}
     audioName: sahne16
-    volume: 1
+    volume: 0.23
     pitch: 1
   - clip: {fileID: 8300000, guid: b77a7ee562029fd47b59d72960699b25, type: 3}
     source: {fileID: 0}
     audioName: sahne17
-    volume: 1
+    volume: 0.23
     pitch: 1
   - clip: {fileID: 8300000, guid: 3831f50f73311dc4e96c7c9b551be637, type: 3}
     source: {fileID: 0}
     audioName: sahne18
-    volume: 1
+    volume: 0.23
     pitch: 1
   - clip: {fileID: 8300000, guid: 68519accc2b323841ac718d847050b56, type: 3}
     source: {fileID: 0}
     audioName: sahne19
-    volume: 1
+    volume: 0.23
     pitch: 1
   - clip: {fileID: 8300000, guid: e274a2796649cec4fa2ff52fe16b0c3c, type: 3}
     source: {fileID: 0}
     audioName: sahne20
-    volume: 1
+    volume: 0.23
     pitch: 1

@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
 
     public bool dotween = true;
     bool escDown = false;
+    bool firstEscPress = true;
     private Tweener mapTween;
 
 
@@ -21,7 +22,7 @@ public class GameManager : MonoBehaviour
     {
         Vector3 startPosition = mapObj.transform.position;
 
-        // Saða ve sola hareket eden tween'i oluþturun
+        // Saï¿½a ve sola hareket eden tween'i oluï¿½turun
         mapTween = mapObj.transform.DOMoveY(startPosition.x + moveDistance, moveDuration).SetEase(Ease.Linear).SetLoops(-1, LoopType.Yoyo);
     }
 
@@ -35,6 +36,13 @@ public class GameManager : MonoBehaviour
                 particleObj.SetActive(true);
                 mapTween.Pause();
                 escDown = true;
+                
+                if (firstEscPress)
+                {
+                    VoiceManager.instance.Play("sahne8");
+                }
+                
+                firstEscPress = false;
             }
             else if (escDown && Input.GetKeyDown(KeyCode.Escape))
             {
