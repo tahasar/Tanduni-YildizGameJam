@@ -3,12 +3,34 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Zombie
+  - StartCol
+  - NewArea
+  - EnemyAnimStart
+  - Button
+  - Paper
+  - Key
+  - PixelDoor
+  - LoadManager
+  - ExitDoor
+  - NpcTalk
+  - SherlockExit
+  - EnemyCraw
+  - Boss
+  - ParkurFinish
+  - Coin
+  - EnemyAxeMap
+  - ScoreManager
+  - StartDoor
+  - Zombies
+  - Cesme
+  - RedFinish
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
   - 
