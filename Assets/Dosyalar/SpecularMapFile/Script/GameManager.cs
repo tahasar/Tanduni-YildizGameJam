@@ -1,56 +1,57 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using DG.Tweening;
+using UnityEngine;
 
-public class GameManager : MonoBehaviour
+namespace Dosyalar.SpecularMapFile.Script
 {
-    [SerializeField] public GameObject mapObj;
-    [SerializeField] public GameObject particleObj;
-    [HideInInspector] CharacterMovement characterGround;
-
-    public float moveDistance = 1f;
-    public float moveDuration = 1f;
-
-    public bool dotween = true;
-    bool escDown = false;
-    bool firstEscPress = true;
-    private Tweener mapTween;
-
-
-    private void Start()
+    public class GameManager : MonoBehaviour
     {
-        Vector3 startPosition = mapObj.transform.position;
+        [SerializeField] public GameObject mapObj;
+        [SerializeField] public GameObject particleObj;
+        [HideInInspector] CharacterMovement _characterGround;
 
-        // Sa�a ve sola hareket eden tween'i olu�turun
-        mapTween = mapObj.transform.DOMoveY(startPosition.x + moveDistance, moveDuration).SetEase(Ease.Linear).SetLoops(-1, LoopType.Yoyo);
-    }
+        public float moveDistance = 1f;
+        public float moveDuration = 1f;
+
+        public bool dotween = true;
+        bool _escDown = false;
+        bool _firstEscPress = true;
+        private Tweener _mapTween;
 
 
-    public void Update()
-    {
-        if (dotween)
+        private void Start()
         {
-            if (Input.GetKeyDown(KeyCode.Escape) && !escDown)
+            Vector3 startPosition = mapObj.transform.position;
+
+            // Sa�a ve sola hareket eden tween'i olu�turun
+            _mapTween = mapObj.transform.DOMoveY(startPosition.x + moveDistance, moveDuration).SetEase(Ease.Linear).SetLoops(-1, LoopType.Yoyo);
+        }
+
+
+        public void Update()
+        {
+            if (dotween)
             {
-                particleObj.SetActive(true);
-                mapTween.Pause();
-                escDown = true;
-                
-                if (firstEscPress)
+                if (Input.GetKeyDown(KeyCode.Escape) && !_escDown)
                 {
-                    VoiceManager.instance.Play("sahne8");
-                }
+                    particleObj.SetActive(true);
+                    _mapTween.Pause();
+                    _escDown = true;
                 
-                firstEscPress = false;
-            }
-            else if (escDown && Input.GetKeyDown(KeyCode.Escape))
-            {
-                particleObj.SetActive(false);
-                mapTween.Play();
-                escDown = false;
+                    if (_firstEscPress)
+                    {
+                        VoiceManager.İnstance.Play("sahne8");
+                    }
+                
+                    _firstEscPress = false;
+                }
+                else if (_escDown && Input.GetKeyDown(KeyCode.Escape))
+                {
+                    particleObj.SetActive(false);
+                    _mapTween.Play();
+                    _escDown = false;
+                }
             }
         }
-    }
 
+    }
 }

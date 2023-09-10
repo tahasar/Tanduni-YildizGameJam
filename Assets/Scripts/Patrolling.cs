@@ -8,26 +8,26 @@ public class Patrolling : MonoBehaviour
 
     public Transform[] points;
 
-    private int current;
+    private int _current;
 
-    private float speed = 2;
+    [SerializeField] private float speed = 2;
     public NavMeshAgent agent;
     public int targetNumber;
-    private float targetDistance;
+    private float _targetDistance;
 
     // Start is called before the first frame update
     void Start()
     {
-        current = 0;
+        _current = 0;
         targetNumber = Random.Range(0, points.Length);
     }
 
     // Update is called once per frame
     void Update()
     {
-        targetDistance = Vector2.Distance(points[targetNumber].position, transform.position);
+        _targetDistance = Vector2.Distance(points[targetNumber].position, transform.position);
         
-        if (targetDistance > 0.5f)
+        if (_targetDistance > 0.5f)
         {
             agent.SetDestination(points[targetNumber].position);
         }

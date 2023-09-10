@@ -1,11 +1,12 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class cesme : MonoBehaviour
+public class YeterArtik : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        LoadManager.instance.LoadNextLevel("RedScene");
+        LoadManager.instance.LoadNextLevel("ZombieScene");
     }
 }

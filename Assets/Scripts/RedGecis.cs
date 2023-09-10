@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class redGecis : MonoBehaviour
+public class RedGecis : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {

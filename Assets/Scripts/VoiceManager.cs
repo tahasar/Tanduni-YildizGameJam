@@ -8,18 +8,18 @@ public class VoiceManager : MonoBehaviour
 {
 
     public Sound[] sounds;
-    public static VoiceManager instance;
+    public static VoiceManager İnstance;
     
     // Start is called before the first frame update
     void Awake()
     {
-        if (instance != null && instance != this) 
+        if (İnstance != null && İnstance != this) 
         { 
             Destroy(this); 
         } 
         else 
         { 
-            instance = this; 
+            İnstance = this; 
         } 
         
         foreach (var sound in sounds)

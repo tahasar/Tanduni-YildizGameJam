@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Dosyalar.SpecularMapFile.Script;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -215,7 +216,7 @@ public class CharacterMovement : MonoBehaviour
     
     public void OyundanCik1()
     {
-        VoiceManager.instance.Play("sahne20");
+        VoiceManager.İnstance.Play("sahne20");
         InvokeRepeating("OyundanCik2",45f,0f);
     }
     
